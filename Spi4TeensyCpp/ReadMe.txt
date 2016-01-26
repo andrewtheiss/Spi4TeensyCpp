@@ -1,3 +1,6 @@
+
+// This should really be called OpenGL2Serial...
+
 ========================================================================
     CONSOLE APPLICATION : Spi4TeensyCpp Project Overview
 ========================================================================
