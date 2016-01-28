@@ -33,15 +33,16 @@ int _tmain(int argc, _TCHAR* argv[])
     }
 	
 	Spi4TeensyOctoWS2811 * OpenGL2Serial = new Spi4TeensyOctoWS2811();
-	OpenGL2Serial->openSerialConnection();
+	OpenGL2Serial->OpenSerialConnection();
 
-	if (OpenGL2Serial->testConnection()) {
-
+	if (OpenGL2Serial->TestConnection()) {
+		OpenGL2Serial->WriteFrame();
 	}
-
+	
 
 	while(1) {
-
+		Sleep(200);
+		OpenGL2Serial->WriteFrame();
 	}
 }
 
